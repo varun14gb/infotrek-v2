@@ -129,6 +129,14 @@ section {
     text-align: center;
     padding: 8em 0;
     background-color: #1d0059;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section p {
+    width: 60%;
 }
 
 h2 {
