@@ -3,6 +3,14 @@
     src: url('../fonts/Transformers\ Movie.ttf');
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+@font-face {
+    font-family: Iceberg;
+    src: url('../fonts/Iceberg-Regular.ttf');
+}
+
 *,
 html,
 body {
@@ -18,7 +26,8 @@ body {
     margin: 0;
     display: grid;
     /* font-family: ethno; */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Iceberg;
+    /* font-family: 'Courier New', Courier, monospace; */
     box-sizing: border-box;
 }
 
@@ -91,18 +100,7 @@ body {
     align-items: center;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
-
-@font-face {
-    font-family: Iceberg;
-    src: url('../fonts/Iceberg-Regular.ttf');
-}
-
-h1 {
-    font-family: Iceberg;
-}
-
+h1,
 h2,
 h3,
 li {
@@ -110,6 +108,7 @@ li {
 }
 
 .container h1 {
+    font-family: ethno;
     margin: 0;
     display: inline;
     font-size: 80px;
@@ -215,8 +214,9 @@ nav {
     align-items: center;
     width: 100%;
     color: white;
+    background-color: #1a0066;
     /* background-color: rgba(255, 255, 255, 0.024); */
-    backdrop-filter: blur(6px);
+    /* backdrop-filter: blur(6px); */
 }
 
 nav div {
@@ -238,13 +238,15 @@ nav div ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    text-decoration-thickness: 0px;
+    transition: all 0.2s;
 }
 
 nav ul li a:hover {
-    color: rgb(253, 31, 31);
+    /* transform: scale(1.018); */
+    color: rgb(0, 166, 255);
     text-decoration: underline;
     text-decoration-thickness: 4px;
-    font-size: 20px;
 }
 
 .summary {
@@ -318,41 +320,83 @@ footer {
     padding: 16px;
 }
 
-.foot {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 16px;
-    text-align: left;
+
+@media only screen and (max-device-width: 1000px) {
+    .tevents:nth-of-type(1) {
+        margin-right: 20px;
+    }
 }
 
-.foot h2 {
-    font-size: 40px;
+@media only screen and (max-device-width: 768px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .tevents:nth-of-type(1) {
+        margin-right: 0px;
+    }
+
+    .container h1 {
+        font-size: 60px;
+    }
+
+    .container h1 b {
+        font-size: 80px;
+    }
+
+    .time span {
+        width: 50px;
+    }
+
+    .time span div:nth-child(1) {
+        font-size: 24px;
+        height: 40px;
+        width: 40px;
+    }
+
+    .time span div:nth-child(2) {
+        font-size: 0.8rem
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
 }
 
-.foot div:nth-child(1) img {
-    padding-top: 10px;
-    height: 60px;
-}
+@media only screen and (max-device-width: 500px) {
+    .container h1 {
+        font-size: 40px;
+    }
 
-.foot .socials ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-}
+    .container h1 b {
+        font-size: 60px;
+    }
 
-.foot .socials ul li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 28px;
-}
+    .container p {
+        font-size: 1rem;
+    }
 
-.foot .socials ul li a {
-    color: white;
-}
+    .time span {
+        width: 40px;
+    }
 
-.foot .socials ul li a:hover {
-    color: rgb(253, 31, 31);
+    .time span div:nth-child(1) {
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .time span div:nth-child(2) {
+        font-size: 0.6rem
+    }
+
+    section p {
+        width: 80%;
+    }
+
+    .tevents {
+        width: 95%;
+        height: fit-content;
+        padding: 16px;
+    }
 }
