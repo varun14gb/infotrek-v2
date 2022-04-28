@@ -4,7 +4,7 @@ window.onload = function () {
 }
 
 //countdown functioning
-var eventDate = new Date(2022, 3, 27).getTime();
+var eventDate = new Date(2022, 4, 27).getTime();
 var days, hours, minutes, seconds;
 
 getCountdown();
@@ -35,3 +35,25 @@ function getCountdown() {
 function pad(n) {
     return (n < 10 ? '0' : '') + n;
 }
+
+const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.2}s`;
+            }
+        });
+
+        burger.classList.toggle("toggle");
+    });
+}
+
+navSlide();
