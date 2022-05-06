@@ -229,7 +229,7 @@ nav div {
   color: white;
 }
 .flashcoding {
-  background-image: url(../images/demo.jpg)
+  background-image: url(../images/demo.jpg);
   background-size: cover;
 }
 
