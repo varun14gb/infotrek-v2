@@ -229,7 +229,7 @@ nav div {
   color: white;
 }
 .flashcoding {
-  background-image: url(/images/demo.jpg);
+  background-image: url(../images/demo.jpg)
   background-size: cover;
 }
 
@@ -482,7 +482,7 @@ nav div {
 .popuplogo{
     width: 150px;
     height: 180px;
-    background-image: url(/images/event_demo.jpg);
+    background-image: url(../images/event_demo.jpg);
     background-size: cover;
     margin-bottom: 5px;
 }
