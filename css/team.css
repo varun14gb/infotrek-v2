@@ -1,0 +1,98 @@
+main {
+    margin-top: 8vh;
+    min-height: 92vh;
+    background-color: #1d0059;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+main .ttcon {
+    width: 75%;
+}
+
+main h1 {
+    font-size: 3rem;
+}
+
+main h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ttcon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tcard {
+    display: inline-block;
+    /* background-color: rgba(255, 255, 255, 0.059); */
+    min-width: 200px;
+    min-height: 200px;
+    margin: 32px;
+    margin-top: 0;
+    border: 3px solid rgb(1, 24, 202);
+    padding: 16px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.tcard img {
+    z-index: -1;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    /* border: 10px solid rgb(32, 0, 72); */
+    box-shadow: 0 0 12px rgb(136, 0, 255);
+    transition: all 0.5s ease;
+}
+
+.tcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 8px rgb(1, 24, 202);
+}
+
+.tcard:hover img {
+    border-radius: 16px;
+}
+
+.tcard h4 {
+    font-size: 1rem;
+    padding: 4px;
+    margin: 0;
+    font-weight: lighter;
+    color: rgb(139, 139, 139);
+}
+
+.tcard .name {
+    font-weight: normal;
+    color: white;
+}
+
+.tcard div:nth-of-type(1) {
+    margin: 8px 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 166, 255, 0.389);
+    border-radius: 2px;
+}
+
+.tcard .socials {
+    display: flex;
+    padding: 4px 16px 4px 16px;
+    justify-content: space-around;
+}
+
+.tcard .socials span {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.tcard .socials span:hover {
+    color: rgb(226, 43, 192);
+    /* transform: scale(1.2); */
+}
