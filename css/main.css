@@ -156,10 +156,11 @@ li {
     font-size: 80px;
     color: #ffffff;
     font-style: italic;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #fff, 0 0 20px #4d4dff, 0 0 30px #4d4dff, 0 0 40px #0000e6, 0 0 50px #0800e6, 0 0 60px #1300e6, 0 0 70px #2300e6;
+    /* -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-    -webkit-text-stroke: 1px blue;
+    -webkit-text-stroke: 1px blue; */
 }
 
 @keyframes glow {
@@ -499,6 +500,7 @@ footer {
 
     .container p {
         font-size: 1rem;
+        width: 90%;
     }
 
     .time span {
